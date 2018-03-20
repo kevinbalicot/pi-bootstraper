@@ -3,6 +3,9 @@
 echo "Update packages"
 sudo apt-get update
 
+echo "Install vim"
+sudo apt-get install -y vim
+
 echo "Install docker"
 curl -sSL https://get.docker.com | sh
 sudo docker ps
