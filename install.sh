@@ -36,7 +36,7 @@ sudo docker create --name=transmission \
 sudo docker start transmission
 
 echo "Install samba"
-docker run -d -p 445:445 \
+sudo docker run -d -p 445:445 \
     -v /mnt:/share/data \
     --name samba trnape/rpi-samba \
     -u "pi:raspberry" \
